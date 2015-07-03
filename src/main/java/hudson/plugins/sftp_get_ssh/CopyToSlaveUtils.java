@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-package hudson.plugins.sftp_get;
+package hudson.plugins.sftp_get_ssh;
 
 import hudson.FilePath;
 import hudson.model.AbstractBuild;
