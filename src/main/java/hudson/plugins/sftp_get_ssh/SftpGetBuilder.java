@@ -94,14 +94,9 @@ public class SftpGetBuilder extends Builder {
     @Extension
     public static final class DescriptorImpl extends BuildStepDescriptor<Builder> {
         private volatile List<SftpGetConfig> sftpGetConfigs = new ArrayList<SftpGetConfig>();
-        private volatile String sourceFile;
 
         public List<SftpGetConfig> getSftpGetConfigs() {
             return sftpGetConfigs;
-        }
-
-        public String getSourceFile() {
-            return sourceFile;
         }
 
         public DescriptorImpl() {

@@ -125,9 +125,9 @@ public class SftpClient {
 
             logger.println("[sftp-get-plugin] Fetching file: " + sourceFile);
             sftpChannel.get(sourceFile, rootFilePathOnMaster.toString());
+            logger.println("[sftp-get-plugin] File: " + sourceFile + " saved in Workspace");
             sftpChannel.exit();
             session.disconnect();
-            logger.println("[sftp-get-plugin] File: " + sourceFile + " saved in Workspace");
         } catch (Exception e) {
             logger.println("An exception occured while fetching file: " + sourceFile + ": " + e);
         }
